@@ -4309,6 +4309,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 20px;
   height: 50px;
   position: relative;
+  max-width: 280px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4391,8 +4392,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 .navbar-form {

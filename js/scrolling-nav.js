@@ -3,10 +3,13 @@
 $( document ).ready(function() {
 	
     if($(".navbar").outerHeight(true)>51){
-		$("#logo").css('width','70%');
+		$(".navbar-brand").css('max-width','340px');
+                            $(".imagen_chiquilla").css('margin-top','0px');
 	}else{
-		$("#logo").css('width','50%');
+            $(".navbar-brand").css('max-width','280px');
+            $(".imagen_chiquilla").css('margin-top','5px');
 	}
+
 });
 
 
@@ -15,14 +18,18 @@ $(window).scroll(function() {
 	
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-		$("#logo").css('width','50%');
+            $(".navbar-brand").css('max-width','280px');
+            $(".imagen_chiquilla").css('margin-top','5px');
+		//$("#logo").css('width','30%');
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");		
 		setTimeout(function(){
 			var elmnt = document.getElementById("navbar_main");
 	
 			if(elmnt.offsetHeight>51){
-				$("#logo").css('width','70%');
+                            $(".navbar-brand").css('max-width','340px');
+                            $(".imagen_chiquilla").css('margin-top','0px');
+				//$("#logo").css('width','37%');
 			}
 		},100);
     }

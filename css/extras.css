@@ -1,8 +1,16 @@
 body{
 	font-family: Ubuntu, sans-serif;
 }
+.imagen_chiquilla{
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
 
-.navbar-brand img{
-	margin: 5px;
-	width:50%;
+@media (max-width: 768px) {
+    .imagen_chiquilla{
+        width: 75%;
+        margin-top: 5px;
+    }
+
 }
