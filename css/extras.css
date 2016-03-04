@@ -1,6 +1,7 @@
 body{
 	font-family: Ubuntu, sans-serif;
 }
+#success_message{ display: none;}
 .imagen_chiquilla{
     width: 100%;
     margin-top: 5px;
