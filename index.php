@@ -35,9 +35,6 @@
     <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-
-
         <!-- Navigation -->
         <nav id="navbar_main" class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -81,6 +78,10 @@
 
         <!-- Intro Section -->
         <section id="intro" class="intro-section">
+            
+            <?php include_once 'pages/intro.php';?>
+                
+            <!--
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -90,6 +91,7 @@
                     </div>
                 </div>
             </div>
+            -->
         </section>
 
         <!-- About Section -->
@@ -154,6 +156,8 @@
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
+            $('#myCarousel').carousel();
+            
             $('#contact_form').bootstrapValidator({
                 // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
                 feedbackIcons: {
