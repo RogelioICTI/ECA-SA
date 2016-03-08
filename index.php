@@ -10,19 +10,21 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <title>Electrificación y Construcción Angeles S. A. de C. V.</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/theme.css" rel="stylesheet">
-        <link href="css/extras.css" rel="stylesheet">
+        
         <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
         
-        
-
         <!-- Custom CSS -->
         <link href="css/scrolling-nav.css" rel="stylesheet">
 
+        <link href="css/ihover.css" rel="stylesheet">
+        
+        <link href="css/extras.css" rel="stylesheet">
+        
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -30,6 +32,9 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+       
+        <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico" />
+        
     </head>
 
     <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -78,31 +83,14 @@
 
         <!-- Intro Section -->
         <section id="intro" class="intro-section">
-            
             <?php include_once 'pages/intro.php';?>
-                
-            <!--
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Scrolling Nav</h1>
-                        <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                        <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                    </div>
-                </div>
-            </div>
-            -->
         </section>
 
         <!-- About Section -->
         <section id="nosotros" class="about-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>About Section</h1>
-                    </div>
-                </div>
-            </div>
+            <?php include_once 'pages/about.php';?>
+            
+            
         </section>
 
         <!-- Services Section -->
@@ -157,6 +145,7 @@
     <script>
         $(document).ready(function () {
             $('#myCarousel').carousel();
+            $(".collapse").collapse('hide');
             
             $('#contact_form').bootstrapValidator({
                 // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later

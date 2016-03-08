@@ -1,6 +1,50 @@
 body{
-	font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
 }
+
+.li-flash {
+    background: url(../img/bullet.png) no-repeat left top;
+    padding: 0px 0px 10px 20px;
+    /* reset styles (optional): */
+    list-style: none;
+    margin: 0;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.padding-centro{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.padding-centro-10{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.padding-top-15{
+    padding-top:15px; 
+}
+.padding-bottom-15{
+    padding-bottom: 15px; 
+}
+.mayuscula{  
+    text-transform: uppercase;  
+}  
+.info-back h2 {
+    font-family: inherit;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
 #success_message{ display: none;}
 .imagen_chiquilla{
     width: 100%;
@@ -15,3 +59,5 @@ body{
     }
 
 }
+
+

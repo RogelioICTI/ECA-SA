@@ -41,6 +41,17 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row ">
+        <div class="col-md-8 col-md-offset-2 col-xs-12 text-center padding-centro">
+            <h2>Electrificación y Construcción Angeles S. A. de C. V.</h2>
+        </div>
+        <div class="col-md-8 col-md-offset-2 col-xs-12 text-justify padding-bottom-15">
+            <p>Somos una empresa 100% mexicana, que en el año 2009, surge como una respuesta viable y clara a las necesidades de Comisión Federal de Electricidad e la iniciativa privada para construir las redes de distribución en media y baja tensión aéreo y subterráneo a nivel domiciliario e industrial, mantenimiento y mejora continua de la infraestructura eléctrica.</p>
+            <p>Hoy por hoy nos encontramos a la vanguardia con la capacidad de nuestro personal, criterios de suficiencia y competitividad, nos hemos consolidado como empresa sólida en el ramo, lo que ha hecho  que los proyectos sean económicos, seguros  y sobre todo cumplan con la normativa de la empresa suministradora de energía electrica, lo que permite la plena satisfacción de nuestros clientes.</p>
+        </div>
+    </div>
+</div>
 
 
 
