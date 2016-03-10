@@ -82,7 +82,7 @@
         </nav>
 
         <!-- Intro Section -->
-        <section id="intro" class="intro-section">
+        <section id="intro">
             <?php include_once 'pages/intro.php';?>
         </section>
 

@@ -1,4 +1,58 @@
 <div class="container">
+    <div class="row ">
+        <h2>Electrificación y Construcción Angeles S. A. de C. V.</h2>
+    </div>
+</div>
+
+<!--<div class="container">
+    <div class="row ">
+        
+        <div class="col-md-8 col-md-offset-2 col-xs-12 text-center padding-bottom-15">
+            <h2>Electrificación y Construcción Angeles S. A. de C. V.</h2>
+        </div>
+    </div>
+    <div class="row" >
+        
+        <div class="col-xs-12">
+            <p class="text-justify">
+                Somos una empresa de electrificación creada para satisfacer al cliente en sus necesidades de proyectos, construcción, mantenimiento y mejora de sistemas y redes eléctricas, valiéndonos de nuestros recursos, tecnológicos, logísticos, humanos, seguridad y responsabilidad social.
+            </p>
+            <p class="text-justify">
+                Hoy por hoy nos encontramos a la vanguardia con la capacidad de nuestro personal, criterios de suficiencia y competitividad, nos hemos consolidado como empresa sólida en el ramo, lo que ha hecho que los proyectos sean económicos, seguros y sobre todo cumplan con la normativa de la empresa suministradora de energía electrica, lo que permite la plena satisfacción de nuestros clientes.
+            </p>
+
+        </div>
+    </div>
+    <div class="row padding-top-15">
+        <div class="col-md-6 col-xs-12"> 
+            <div class="col-md-4" align="center">
+                <div class="col-md-12 col-md-offset-0 col-xs-6 col-xs-offset-3 thumbnail-eca">
+                    <img class="img-responsive img-circle borde-eca" src="img/about/descarga_1.png" alt="img">
+                </div>
+                <h2 class="titulo-over inset-text">Misión</h2>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <p class="text-justify">Somos una empresa de electrificación creada para satisfacer al cliente en sus necesidades de proyectos, construcción, mantenimiento y mejora de sistemas y redes eléctricas, valiéndonos de nuestros recursos, tecnológicos, logísticos, humanos, seguridad y responsabilidad social. </p>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="col-md-4" align="center">
+                <div class="col-md-12 col-md-offset-0 col-xs-6 col-xs-offset-3 thumbnail-eca">
+                    <img class="img-responsive img-circle borde-eca" src="img/about/descarga_2.png" alt="img">
+                </div>
+                <h2 class="titulo-over inset-text">Visión</h2>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <p class="text-justify">Ser una empresa líder en la construcción de redes en media y baja tensión, suministro y renta de generadores de emergencia, proyectos y servicios de gestión ante CFE, ofreciendo puntualidad, calidad y costos competitivos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+<!--
+<div class="container">
     <div class="row" >
         <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
             <h2>¿Quienes Somos?</h2>
@@ -82,6 +136,6 @@
     </div>
 </div>
 </div>
-
+-->
 
 

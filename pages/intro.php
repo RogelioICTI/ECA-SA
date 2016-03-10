@@ -1,6 +1,6 @@
 <div class="row-fluid">
     <div class="span9">
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel"  class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -8,14 +8,14 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img class="img-responsive" width="100%" src="img/banner/1.png">
+                    <img class="img-responsive" width="100%" src="img/banner/3.png">
                     <div class="carousel-caption">
                         <h4>First label</h4>
                         <p>A working Bootstrap carousel example.</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="img/banner/2.png" width="100%">
+                    <img src="img/banner/3.png" width="100%">
                     <div class="carousel-caption">
                         <h4>Second label</h4>
                         <p>This is the second slide text.</p>
@@ -41,17 +41,43 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row ">
-        <div class="col-md-8 col-md-offset-2 col-xs-12 text-center padding-centro">
-            <h2>Electrificación y Construcción Angeles S. A. de C. V.</h2>
+<div class="container-fluid backgroud-eca font-white padding-centro">
+    <div class="container">
+        <div class="col-md-4 img-gray">
+            <div class="col-md-3" align="center">
+                <img class="img-responsive" width="50px" src="img/about/phone.png">
+            </div>
+            <div class="col-md-9 no-padding">
+                <p class="shadow-text hidden-xs hidden-sm">(55)21683212 y (55)21685991</p>
+                <p class="shadow-text text-center hidden-lg hidden-md">(55)21683212 y (55)21685991</p>
+            </div>
         </div>
-        <div class="col-md-8 col-md-offset-2 col-xs-12 text-justify padding-bottom-15">
-            <p>Somos una empresa 100% mexicana, que en el año 2009, surge como una respuesta viable y clara a las necesidades de Comisión Federal de Electricidad e la iniciativa privada para construir las redes de distribución en media y baja tensión aéreo y subterráneo a nivel domiciliario e industrial, mantenimiento y mejora continua de la infraestructura eléctrica.</p>
-            <p>Hoy por hoy nos encontramos a la vanguardia con la capacidad de nuestro personal, criterios de suficiencia y competitividad, nos hemos consolidado como empresa sólida en el ramo, lo que ha hecho  que los proyectos sean económicos, seguros  y sobre todo cumplan con la normativa de la empresa suministradora de energía electrica, lo que permite la plena satisfacción de nuestros clientes.</p>
+        <div class="col-md-4 img-gray">
+            <div class="col-md-3 no-padding" align="center">
+                <img class="img-responsive" width="50px" src="img/about/mail.png">
+            </div>
+            <div class="col-md-9 no-padding">
+                <p class="shadow-text hidden-xs hidden-sm">contacto@eca-sa.com<br/>ingenieria@eca-sa.com<br/>administracion@eca-sa.com</p>
+                <p class="shadow-text text-center hidden-lg hidden-md">contacto@eca-sa.com<br/>ingenieria@eca-sa.com<br/>administracion@eca-sa.com</p>
+            </div>
+
+
+        </div>
+        <div class="col-md-4 img-gray">
+            <div class="col-md-3 no-padding" align="center">
+                <img class="img-responsive" width="50px" src="img/about/address.png">
+            </div>
+            <div class="col-md-9 no-padding">
+                <p class="shadow-text hidden-xs hidden-sm">Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
+                <p class="shadow-text text-center hidden-lg hidden-md">Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+
 
 
 
