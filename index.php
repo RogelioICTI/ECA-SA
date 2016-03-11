@@ -14,17 +14,17 @@
 
         <!-- Bootstrap Core CSS -->
         <link href="css/theme.css" rel="stylesheet">
-        
+
         <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-        
+
         <!-- Custom CSS -->
         <link href="css/scrolling-nav.css" rel="stylesheet">
 
         <link href="css/ihover.css" rel="stylesheet">
-        
+
         <link href="css/extras.css" rel="stylesheet">
-        
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -32,9 +32,9 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-       
+
         <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico" />
-        
+
     </head>
 
     <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -83,14 +83,14 @@
 
         <!-- Intro Section -->
         <section id="intro">
-            <?php include_once 'pages/intro.php';?>
+            <?php include_once 'pages/intro.php'; ?>
         </section>
 
         <!-- About Section -->
         <section id="nosotros" class="about-section">
-            <?php include_once 'pages/about.php';?>
-            
-            
+            <?php include_once 'pages/about.php'; ?>
+
+
         </section>
 
         <!-- Services Section -->
@@ -117,14 +117,9 @@
 
         <!-- Contact Section -->
         <section id="contacto" class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Contact Section asd</h1>
-                        <?php include_once('contacto.php'); ?>
-                    </div>
-                </div>
-            </div>
+
+            <?php include_once('pages/contacto.php'); ?>
+
         </section>
 
         <!-- jQuery -->
@@ -139,14 +134,23 @@
 
     </body>
 
-    
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
+            /*$(window).resize(function () {
+             var h = $(window).height(),
+             offsetTop = 60; // Calculate the top offset
+             
+             $('#map').css('height', (h - offsetTop));
+             }).resize();
+             */
+
+
             $('#myCarousel').carousel();
             $(".collapse").collapse('hide');
-            
+
             $('#contact_form').bootstrapValidator({
                 // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
                 feedbackIcons: {
@@ -161,77 +165,28 @@
                                 min: 2,
                             },
                             notEmpty: {
-                                message: 'Please supply your first name'
-                            }
-                        }
-                    },
-                    last_name: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                            },
-                            notEmpty: {
-                                message: 'Please supply your last name'
+                                message: 'Por favor, ingresa tu nombre'
                             }
                         }
                     },
                     email: {
                         validators: {
                             notEmpty: {
-                                message: 'Please supply your email address'
+                                message: 'Por favor, ingresa tu E-Mail'
                             },
                             emailAddress: {
-                                message: 'Please supply a valid email address'
+                                message: 'El formato valido es: correo@dominio.com'
                             }
                         }
                     },
                     phone: {
                         validators: {
                             notEmpty: {
-                                message: 'Please supply your phone number'
+                                message: 'Por favor, ingresa tu teléfono'
                             },
-                            phone: {
-                                country: 'US',
-                                message: 'Please supply a vaild phone number with area code'
-                            }
-                        }
-                    },
-                    address: {
-                        validators: {
                             stringLength: {
                                 min: 8,
                             },
-                            notEmpty: {
-                                message: 'Please supply your street address'
-                            }
-                        }
-                    },
-                    city: {
-                        validators: {
-                            stringLength: {
-                                min: 4,
-                            },
-                            notEmpty: {
-                                message: 'Please supply your city'
-                            }
-                        }
-                    },
-                    state: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please select your state'
-                            }
-                        }
-                    },
-                    zip: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please supply your zip code'
-                            },
-                            zipCode: {
-                                country: 'US',
-                                message: 'Please supply a vaild zip code'
-                            }
                         }
                     },
                     comment: {
@@ -239,10 +194,10 @@
                             stringLength: {
                                 min: 10,
                                 max: 200,
-                                message: 'Please enter at least 10 characters and no more than 200'
+                                message: 'Por favor, ingresa al menos 10 caracteres y no más de 200'
                             },
                             notEmpty: {
-                                message: 'Please supply a description of your project'
+                                message: 'Por favor, ingresa un comentario'
                             }
                         }
                     }
