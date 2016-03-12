@@ -1,7 +1,7 @@
 <div class="container">
     <h2 class="titulo-blue">Contáctanos</h2>
 </div>
-<div id="map" class="container-fluid"></div>
+
 <script>
     function initMap() {
 
@@ -33,11 +33,16 @@
 
 <div class="container">
     <div class="row padding-centro">
-        <div class="col-md-4">
+        <div class="col-md-6">
+            <div id="map" class="container-fluid"></div>
+            <br/>
             <p>Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
-            <a class="" href="whatsapp://send?text=https://goo.gl/maps/sRP6Vh5u9B92"><img src="img/contacto/whatsapp.png"></a>
+            <p><strong>Teléfonos:</strong> <br/>(55)21683212 y (55)21685991</p>
+            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://<?php echo $_SERVER['SERVER_NAME'];?>/">Compartir FB</a>
+            <a class="" href="whatsapp://send?text=Electrificación y Construcción Angeles S. A. de C. V.%0A(55)21683212%0A(55)21685991%0Ahttps://goo.gl/maps/sRP6Vh5u9B92"><img src="img/contacto/whatsapp.png"></a>
+            
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
             <form class="well form-horizontal" action=" " method="post"  id="contact_form">
                 <fieldset>
 
@@ -50,7 +55,7 @@
                         <div class="col-md-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input  name="first_name" placeholder="Nombre completo" class="form-control"  type="text">
+                                <input id="input_name"  name="first_name" placeholder="Nombre completo" class="form-control"  type="text">
                             </div>
                         </div>
                     </div>
@@ -61,7 +66,7 @@
                         <div class="col-md-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="correo@dominio.com" class="form-control"  type="text">
+                                <input id="input_email" name="email" placeholder="correo@dominio.com" class="form-control"  type="text">
                             </div>
                         </div>
                     </div>
@@ -74,7 +79,7 @@
                         <div class="col-md-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input name="phone" placeholder="(55)1234-1212" class="form-control" type="text">
+                                <input id="input_phone" name="phone" placeholder="(55)1234-1212" class="form-control" type="text">
                             </div>
                         </div>
                     </div>
@@ -86,24 +91,30 @@
                         <div class="col-md-8 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment" placeholder="Deja tu comentario ó duda"></textarea>
+                                <textarea id="input_description" class="form-control" name="comment" placeholder="Deja tu comentario ó duda"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <!-- Success message -->
-                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8" align="right">
+                            <div id="resultado"></div>
+                        </div>
+                    </div>
 
                     <!-- Button -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
+                        <div class="col-md-12" align="right">
                             <button type="submit" class="btn btn-warning" >Enviar <span class="glyphicon glyphicon-send"></span></button>
                         </div>
                     </div>
 
+
                 </fieldset>
-                
+
             </form>
         </div>
     </div>

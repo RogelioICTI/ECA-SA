@@ -153,6 +153,12 @@
 
             $('#contact_form').bootstrapValidator({
                 // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+                submitButton: '$contact_form button[type="submit"]',
+                submitHandler: function (validator, form, submitButton) {
+                    enviarMail(form);
+                    $("#resultado").fadeIn();
+                    return false;
+                },
                 feedbackIcons: {
                     valid: 'glyphicon glyphicon-ok',
                     invalid: 'glyphicon glyphicon-remove',
@@ -204,23 +210,40 @@
                 }
             })
                     .on('success.form.bv', function (e) {
-                        $('#success_message').slideDown({opacity: "show"}, "slow") // Do something ...
+                        e.preventDefault();
                         $('#contact_form').data('bootstrapValidator').resetForm();
 
-                        // Prevent form submission
-                        e.preventDefault();
-
-                        // Get the form instance
-                        var $form = $(e.target);
-
-                        // Get the BootstrapValidator instance
-                        var bv = $form.data('bootstrapValidator');
-
-                        // Use Ajax to submit form data
-                        $.post($form.attr('action'), $form.serialize(), function (result) {
-                            console.log(result);
-                        }, 'json');
                     });
         });
+    </script>
+
+    <script>
+        function enviarMail(form) {
+            $.ajax({
+                data: $(form).serialize,
+                dataType: "json",
+                url: 'enviar_mail.php',
+                type: 'POST',
+                beforeSend: function () {
+                    $("#resultado").html('<div class="alert alert-info" role="alert">Procesando, espere por favor...</div>');
+                },
+                success: function (response) {
+                    if (response.error == 'no') {
+                        $("#input_name").val('');
+                        $("#input_email").val('');
+                        $("#input_phone").val('');
+                        $("#input_description").val('');
+                    }
+                    var cadena = '<div class="alert ' + response.alerta + '" role="alert">' + response.mensaje + '</div>';
+                    $("#resultado").html(cadena);
+                    $('#contact_form').data('bootstrapValidator').resetForm();
+                }
+            });
+
+            setTimeout(function () {
+                $("#resultado").fadeOut('slow');
+            }, 2000);
+
+        }
     </script>
 </html>
