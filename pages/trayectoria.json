@@ -1,0 +1,81 @@
+{
+    "1" : {
+        "cliente":"CFE",
+        "trabajo": "Servicio de Acarreo y acomodo de Material",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/12/02 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "2": {
+        "cliente":"ALGO",
+        "trabajo": "Una cosa se hizo",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/02/18 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "3": {
+        "cliente":"CFE",
+        "trabajo": "Servicio de Acarreo y acomodo de Material",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/12/02 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "4": {
+        "cliente":"ALGO",
+        "trabajo": "Una cosa se hizo",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/02/18 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "5": {
+        "cliente":"CFE",
+        "trabajo": "Servicio de Acarreo y acomodo de Material",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/12/02 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "6": {
+        "cliente":"ALGO",
+        "trabajo": "Una cosa se hizo",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/02/18 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "7": {
+        "cliente":"CFE",
+        "trabajo": "Servicio de Acarreo y acomodo de Material",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/12/02 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+
+    },
+    "8": {
+        "cliente":"ALGO",
+        "trabajo": "Una cosa se hizo",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/02/18 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+    },
+    "9": {
+        "cliente":"ALGO",
+        "trabajo": "Una cosa se hizo",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/02/18 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+    },
+    "10": {
+        "cliente":"ALGO",
+        "trabajo": "Una cosa se hizo",
+        "lugar": "Ecatepec, Edo de Méx",
+        "fecha": "2010/02/18 00:00:00",
+        "convocatoria": "Adjudicación Directa"
+    }
+    
+    
+}

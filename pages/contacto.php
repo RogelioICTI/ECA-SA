@@ -38,12 +38,13 @@
             <br/>
             <p>Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
             <p><strong>Teléfonos:</strong> <br/>(55)21683212 y (55)21685991</p>
-            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://<?php echo $_SERVER['SERVER_NAME'];?>/">Compartir FB</a>
+            <a class="popup" href="http://www.facebook.com/sharer.php?u=http://<?php echo $_SERVER['SERVER_NAME'];?>/">Compartir FB</a>
+            <a class="twitter popup" href="http://twitter.com/share?text=This%20is%20so%20easy">Tweet</a>
             <a class="" href="whatsapp://send?text=Electrificación y Construcción Angeles S. A. de C. V.%0A(55)21683212%0A(55)21685991%0Ahttps://goo.gl/maps/sRP6Vh5u9B92"><img src="img/contacto/whatsapp.png"></a>
             
         </div>
         <div class="col-md-6">
-            <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+            <form class="well form-horizontal" action="enviar_mail.php" method="post"  id="contact_form">
                 <fieldset>
 
                     <!-- Form Name -->
@@ -95,6 +96,17 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">7 + 21 =</label>
+                        <div class="col-md-8 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <input type="number" id="input_robot" class="form-control" name="robot" placeholder="Escribe la respuesta"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
 
                     <!-- Success message -->
                     <div class="form-group">
