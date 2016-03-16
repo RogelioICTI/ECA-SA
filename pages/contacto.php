@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="titulo-blue">Contáctanos</h2>
+    <h1 class="titulo-blue text-center">Contáctanos</h1>
 </div>
 
 <script>
@@ -32,23 +32,30 @@
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 
 <div class="container">
-    <div class="row padding-centro">
-        <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-6 padding-centro">
             <div id="map" class="container-fluid"></div>
             <br/>
-            <p>Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
-            <p><strong>Teléfonos:</strong> <br/>(55)21683212 y (55)21685991</p>
-            <a class="popup" href="http://www.facebook.com/sharer.php?u=http://<?php echo $_SERVER['SERVER_NAME'];?>/">Compartir FB</a>
-            <a class="twitter popup" href="http://twitter.com/share?text=This%20is%20so%20easy">Tweet</a>
-            <a class="" href="whatsapp://send?text=Electrificación y Construcción Angeles S. A. de C. V.%0A(55)21683212%0A(55)21685991%0Ahttps://goo.gl/maps/sRP6Vh5u9B92"><img src="img/contacto/whatsapp.png"></a>
-            
+            <p><strong>Dirección:</strong> Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
+            <p><strong>Teléfonos:</strong> (55)21683212 y (55)21685991</p>
+            <div class="text-center">
+                <a class="popup" href="http://www.facebook.com/sharer.php?u=http://<?php echo $_SERVER['SERVER_NAME']; ?>/">
+                    <img src="img/contacto/facebook.png"
+                </a>
+                <a class="twitter popup" href="http://twitter.com/share?text=This%20is%20so%20easy">
+                    <img src="img/contacto/twitter.png"
+                </a>
+                <a class="" href="whatsapp://send?text=Electrificación y Construcción Angeles S. A. de C. V.%0A(55)21683212%0A(55)21685991%0Ahttps://goo.gl/maps/sRP6Vh5u9B92">
+                    <img src="img/contacto/whatsapp.png">
+                </a>
+            </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 padding-centro">
             <form class="well form-horizontal" action="enviar_mail.php" method="post"  id="contact_form">
                 <fieldset>
 
                     <!-- Form Name -->
-                    <legend>!Comunicate con nosotros!</legend>
+                    <legend class="text-center">!Comunicate con nosotros!</legend>
 
                     <!-- Text input-->
                     <div class="form-group">
@@ -96,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label class="col-md-4 control-label">7 + 21 =</label>
                         <div class="col-md-8 inputGroupContainer">
@@ -106,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <!-- Success message -->
                     <div class="form-group">

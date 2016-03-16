@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row ">
-        <h2 class="titulo-blue">¿Quienes Somos?</h2>
+        <h1 class="titulo-blue">¿Quienes Somos?</h1>
     </div>
     <div class="row" >
         <div class="col-xs-12">

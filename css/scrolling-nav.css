@@ -36,36 +36,39 @@ of those sections to manage the look and feel of the site. */
     margin-top: 50px;
     /*padding-top: 50px;*/
     text-align: center;
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
 }
 
 .about-section {
     /*height: 100%;*/
     /*margin-top: 50px;*/
-    box-shadow: inset 0 4px 20px 0 rgba(0, 0, 0, .4);
+    /*box-shadow: inset 0 4px 20px 0 rgba(0, 0, 0, .4);*/
     padding-top: 50px;
     text-align: center;
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
 }
 
 .services-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #F2F2F2;
+    /*height: 100%;*/
+    padding-top: 50px;
+    /*text-align: center;*/
+    /*background: #F2F2F2;*/
 }
 
 .portafolio-section {
     /*height: 100%;*/
     padding-top: 50px;
     /*text-align: center;*/
-    background: #F2F2F2;
+    /*background: #F2F2F2;*/
 }
 
 .contact-section {
     
     padding-top: 50px;
     /*text-align: center;*/
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
+    /*box-shadow: inset 0 4px 20px 0 rgba(0, 0, 0, .4);*/
+}
+.shadow-body{
     box-shadow: inset 0 4px 20px 0 rgba(0, 0, 0, .4);
 }

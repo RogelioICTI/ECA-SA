@@ -48,8 +48,8 @@
                 <img class="img-responsive" width="50px" src="img/about/phone.png">
             </div>
             <div class="col-md-9 no-padding">
-                <p class="shadow-text hidden-xs hidden-sm">(55)21683212 y (55)21685991</p>
-                <p class="shadow-text text-center hidden-lg hidden-md">(55)21683212 y (55)21685991</p>
+                <span class="shadow-text hidden-xs hidden-sm">(55)21683212 y (55)21685991</span>
+                <span class="shadow-text text-center hidden-lg hidden-md">(55)21683212 y (55)21685991</span>
             </div>
         </div>
         <div class="col-md-4 img-gray">
@@ -57,8 +57,8 @@
                 <img class="img-responsive" width="50px" src="img/about/mail.png">
             </div>
             <div class="col-md-9 no-padding">
-                <p class="shadow-text hidden-xs hidden-sm">contacto@eca-sa.com<br/>ingenieria@eca-sa.com<br/>administracion@eca-sa.com</p>
-                <p class="shadow-text text-center hidden-lg hidden-md">contacto@eca-sa.com<br/>ingenieria@eca-sa.com<br/>administracion@eca-sa.com</p>
+                <span class="shadow-text hidden-xs hidden-sm">contacto@eca-sa.com<br/>ingenieria@eca-sa.com<br/>administracion@eca-sa.com</span>
+                <span class="shadow-text text-center hidden-lg hidden-md">contacto@eca-sa.com<br/>ingenieria@eca-sa.com<br/>administracion@eca-sa.com</span>
             </div>
 
 
@@ -68,8 +68,8 @@
                 <img class="img-responsive" width="50px" src="img/about/address.png">
             </div>
             <div class="col-md-9 no-padding">
-                <p class="shadow-text hidden-xs hidden-sm">Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
-                <p class="shadow-text text-center hidden-lg hidden-md">Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</p>
+                <span class="shadow-text hidden-xs hidden-sm">Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</span>
+                <span class="shadow-text text-center hidden-lg hidden-md">Av. Nicolás Romero #42, Colonia Hidalgo en Nicolás Romero, Estado de México</span>
             </div>
         </div>
     </div>

@@ -15,18 +15,19 @@
         <!-- Bootstrap Core CSS -->
         <link href="css/fresh-bootstrap-table.css" rel="stylesheet" />
         <link href="css/theme.css" rel="stylesheet">
-        
-    
-        
+
+
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <link href='https://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
 
         <!-- Custom CSS -->
         <link href="css/scrolling-nav.css" rel="stylesheet">
 
         <link href="css/ihover.css" rel="stylesheet">
-        
+
         <link href="css/extras.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -90,6 +91,7 @@
         </section>
 
         <!-- About Section -->
+        <div class="shadow-body">
         <section id="nosotros" class="about-section">
             <?php include_once 'pages/about.php'; ?>
 
@@ -98,31 +100,19 @@
 
         <!-- Services Section -->
         <section id="servicios" class="services-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Services Section</h1>
-                    </div>
-                </div>
-            </div>
+            <?php include_once('pages/servicios.php'); ?>    
         </section>
 
         <!-- Services Section -->
         <section id="portafolio" class="portafolio-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <?php include_once('pages/portafolio.php'); ?>
-                    </div>
-                </div>
-            </div>
+                <?php include_once('pages/portafolio.php'); ?>            
         </section>
 
         <!-- Contact Section -->
         <section id="contacto" class="contact-section">
             <?php include_once('pages/contacto.php'); ?>
         </section>
-        
+        </div>
         <?php include_once 'pages/footer.php'; ?>
 
         <!-- jQuery -->
@@ -141,13 +131,13 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-    
+
     <script type="text/javascript">
         var $table = $('#fresh-table'),
-            //$alertBtn = $('#alertBtn'),
-            full_screen = false;
-            
-        $().ready(function(){
+                //$alertBtn = $('#alertBtn'),
+                full_screen = false;
+
+        $().ready(function () {
             $table.bootstrapTable({
                 toolbar: ".toolbar",
                 showRefresh: true,
@@ -158,12 +148,11 @@
                 striped: true,
                 sortable: true,
                 pageSize: 10,
-                pageList: [5,10,25,50,100],
-                
-                formatShowingRows: function(pageFrom, pageTo, totalRows){
+                pageList: [5, 10, 25, 50, 100],
+                formatShowingRows: function (pageFrom, pageTo, totalRows) {
                     //do nothing here, we don't want to show the text "showing x of y from..." 
                 },
-                formatRecordsPerPage: function(pageNumber){
+                formatRecordsPerPage: function (pageNumber) {
                     return pageNumber + " filas visibles";
                 },
                 icons: {
@@ -175,42 +164,42 @@
                 }
             });
         });
-    
+
         $(function () {
             $alertBtn.click(function () {
                 alert("You pressed on Alert");
             });
         });
-        
-    
+
+
         function operateFormatter(value, row, index) {
             return [
                 '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
-                    '<i class="fa fa-heart"></i>',
+                '<i class="fa fa-heart"></i>',
                 '</a>',
                 '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
-                    '<i class="fa fa-edit"></i>',
+                '<i class="fa fa-edit"></i>',
                 '</a>',
                 '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
-                    '<i class="fa fa-remove"></i>',
+                '<i class="fa fa-remove"></i>',
                 '</a>'
             ].join('');
         }
-    
+
         window.operateEvents = {
             'click .like': function (e, value, row, index) {
                 alert('You click like icon, row: ' + JSON.stringify(row));
                 console.log(value, row, index);
             },
             'click .edit': function (e, value, row, index) {
-                console.log(value, row, index);    
+                console.log(value, row, index);
             },
             'click .remove': function (e, value, row, index) {
                 alert('You click remove icon, row: ' + JSON.stringify(row));
                 console.log(value, row, index);
             }
         };
-    
+
     </script>
 
     <script>
@@ -225,7 +214,7 @@
 
 
             $('#myCarousel').carousel();
-            $(".collapse").collapse('hide');
+            //$(".collapse").collapse('hide');
 
             $('#contact_form').bootstrapValidator({
                 // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
@@ -302,7 +291,7 @@
 
     <script>
         function enviarMail(form) {
-            
+
             $.ajax({
                 data: $("#contact_form").serialize(),
                 //dataType: "json",
@@ -320,8 +309,8 @@
                     }
                     var respuesta = JSON.parse(response);
                     var cadena = '<div class="alert ' + respuesta.alerta + '" role="alert">' + respuesta.mensaje + '</div>';
-                   
-                    
+
+
                     $("#resultado").html(cadena);
                     $('#contact_form').data('bootstrapValidator').resetForm();
                 }
@@ -333,23 +322,23 @@
 
         }
     </script>
-    
+
     <script>
-  $('.popup').click(function(event) {
-    var width  = 575,
-        height = 400,
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = this.href,
-        opts   = 'status=1' +
-                 ',width='  + width  +
-                 ',height=' + height +
-                 ',top='    + top    +
-                 ',left='   + left;
-    
-    window.open(url, 'twitter', opts);
- 
-    return false;
-  });
-</script>
+        $('.popup').click(function (event) {
+            var width = 575,
+                    height = 400,
+                    left = ($(window).width() - width) / 2,
+                    top = ($(window).height() - height) / 2,
+                    url = this.href,
+                    opts = 'status=1' +
+                    ',width=' + width +
+                    ',height=' + height +
+                    ',top=' + top +
+                    ',left=' + left;
+
+            window.open(url, 'twitter', opts);
+
+            return false;
+        });
+    </script>
 </html>

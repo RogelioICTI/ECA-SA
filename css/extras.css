@@ -2,6 +2,92 @@ body{
     font-family: Ubuntu, sans-serif;
     font-size: 16px;
 }
+
+h3{
+    color: #7c795d; 
+    font-family: 'Trocchi', serif; 
+    font-weight: normal; 
+}
+
+.margin-bottom-5{
+    margin-bottom: 5px;
+}
+
+.title-shadow{
+    text-shadow: 1px 1px #dddddd;
+}
+.title-h {
+    border-bottom: medium double #0036BA;  
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.imagen-resaltado{
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    max-height: 55px;
+}
+.color-turquesa{
+    color: #00ACA2;
+}
+
+.color-rojo{
+    color: #EE2E24;
+}
+
+.color-azul{
+    color: #009DDC;
+}
+
+.color-naranja{
+    color: #F8981D;
+}
+
+.titulo-recuadro{
+    padding-top: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px #dddddd;
+
+}
+
+.recuadro-gris{
+    position: relative;    
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+
+.recuadro-blanco{
+    margin-top: 35px;
+    position: relative;    
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+.recuadro-blanco p::first-letter{
+    margin-left: 15px;
+}
+
+p::first-letter{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 0.5px;
+}
+
+.padding-lr-cero{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+
 .margin-bottom{
     margin-bottom: 20px;
 }
