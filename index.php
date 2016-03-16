@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <head>
 
@@ -134,7 +134,7 @@
 
     <script type="text/javascript">
         var $table = $('#fresh-table'),
-                //$alertBtn = $('#alertBtn'),
+                
                 full_screen = false;
 
         $().ready(function () {
@@ -165,11 +165,7 @@
             });
         });
 
-        $(function () {
-            $alertBtn.click(function () {
-                alert("You pressed on Alert");
-            });
-        });
+        
 
 
         function operateFormatter(value, row, index) {

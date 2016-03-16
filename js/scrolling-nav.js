@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(".navbar-brand").css('max-width', '340px');
         $(".imagen_chiquilla").css('margin-top', '0px');
     } else {
-        $(".navbar-brand").css('max-width', '280px');
+        $(".navbar-brand").css('max-width', '250px');
         $(".imagen_chiquilla").css('margin-top', '5px');
     }
 
@@ -18,7 +18,7 @@ $(window).scroll(function () {
 
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".navbar-brand").css('max-width', '280px');
+        $(".navbar-brand").css('max-width', '250px');
         $(".imagen_chiquilla").css('margin-top', '5px');
         //$("#logo").css('width','30%');
     } else {
