@@ -26,7 +26,7 @@ if ($robot != 28) {
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
-    $mail->setFrom('eca@example.com', 'Mailer');
+    $mail->setFrom('eca@example.com', 'Contacto desde ECA-WEB');
     $mail->addAddress('rogelio.vargas.marquez@gmail.com', 'Rogelio');     // Add a recipien
 
     $mail->isHTML(true);                                  // Set email format to HTML

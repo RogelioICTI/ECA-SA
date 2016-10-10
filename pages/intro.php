@@ -8,35 +8,35 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img class="img-responsive" width="100%" src="img/banner/3.png">
-                    <div class="carousel-caption">
-                        <h4>First label</h4>
-                        <p>A working Bootstrap carousel example.</p>
+                    <img class="img-responsive" src="img/banner/imagen_1.jpg">
+                    <div class="carousel-caption text-center">
+                        <!--<h4>First label</h4>-->
+                        Construimos los caminos de la electricidad
                     </div>
                 </div>
                 <div class="item">
-                    <img src="img/banner/3.png" width="100%">
-                    <div class="carousel-caption">
-                        <h4>Second label</h4>
-                        <p>This is the second slide text.</p>
+                    <img src="img/banner/imagen_2.jpg">
+                    <div class="carousel-caption text-center">
+                        <!--<h4>Second label</h4>-->
+                        Satisfaciendo las necesidades de nuestros clientes
                     </div>
                 </div>
                 <div class="item">
-                    <img src="img/banner/3.png" width="100%">
-                    <div class="carousel-caption">
-                        <h4>Third label</h4>
-                        <p>Take note of the 'active' and 'slide' classes.</p>
+                    <img src="img/banner/imagen_3.jpg" width="100%">
+                    <div class="carousel-caption text-center">
+                        <!--<h4>Third label</h4>-->
+                        Apegándonos a los proyectos y normas de mejoras eléctricas
                     </div>
                 </div>
             </div>
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>
         </div>
     </div>

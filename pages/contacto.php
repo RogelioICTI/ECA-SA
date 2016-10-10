@@ -22,14 +22,15 @@
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            title: 'Electrificación y Construcción Angeles S. A. de C. V.'
+            title: 'Electrificación y Construcción Angeles S. A. de C. V.',
+			icon: 'img/mini_ico.png'
         });
         marker.addListener('click', function () {
             infowindow.open(map, marker);
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyBsIzVsSXMo6LGJXUx8vfvvUVyb8CqRzx4" async defer></script>
 
 <div class="container">
     <div class="row">

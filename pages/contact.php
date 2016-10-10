@@ -8,6 +8,7 @@
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsIzVsSXMo6LGJXUx8vfvvUVyb8CqRzx4&callback=initMap"
 async defer></script>
 

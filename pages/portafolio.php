@@ -15,44 +15,6 @@
         </div>
     </div>
 </div>
-<div class="container padding-lr-cero">
-    <h3 class="titulo-blue text-center margin-bottom-5 title-shadow">Valores</h3>
-    <!--<div class="title-h margin-bottom-15">
-        <h3 class="titulo-blue text-center margin-bottom-5 title-shadow">Valores</h3>
-    </div>-->
-    <div class="row padding-bottom-15">
-        <div class="col-md-3">
-            <div class="recuadro-blanco text-justify">
-                <img class="imagen-resaltado" src="img/portafolio/honestidad.png">
-                <h4 class="text-center titulo-recuadro color-rojo">HONESTIDAD</h4> 
-                <p>Es una forma de vivir congruente entre lo que se piensa, se dice y se hace, la honestidad expresa respeto por uno mismo y por los demás.</p>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="recuadro-blanco text-justify">
-                <img class="imagen-resaltado" src="img/portafolio/seguridad.png">
-                <h4 class="text-center titulo-recuadro color-azul">SEGURIDAD</h4> 
-                <p>Es privilegiar la integridad física y mental del personal de la empresa ante cualquier otro interés. </p>
-            </div>
-        </div>
-        <div class="col-md-3">
-            
-            <div class="recuadro-blanco text-justify">
-                <img class="imagen-resaltado" src="img/portafolio/equipo.png">
-                <h4 class="text-center titulo-recuadro color-naranja">TRABAJO DE EQUIPO</h4>
-                <p>Compartir y vivir logros y responsabilidades por medio de acciones conjuntas y organizadas, encaminadas al logro de un fin común.</p>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="recuadro-blanco text-justify">
-                <img class="imagen-resaltado" src="img/portafolio/resultados.png">
-                <h4 class="text-center titulo-recuadro color-turquesa">ENFOQUE A RESULTADOS</h4> 
-                <p>Es entender la razón por lo que trabajamos, entender el objetivo y llegar a él cumpliendo con los tiempos y formas.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
 <?php
 $archivo = file_get_contents("trayectoria.json", TRUE);
 $trayectoria = array();

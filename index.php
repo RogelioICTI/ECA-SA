@@ -17,7 +17,6 @@
         <link href="css/theme.css" rel="stylesheet">
 
 
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
@@ -87,33 +86,33 @@
 
         <!-- Intro Section -->
         <section id="intro">
-            <?php include_once 'pages/intro.php'; ?>
+			<?php include_once 'pages/intro.php'; ?>
         </section>
 
         <!-- About Section -->
         <div class="shadow-body">
-        <section id="nosotros" class="about-section">
-            <?php include_once 'pages/about.php'; ?>
+			<section id="nosotros" class="about-section">
+				<?php include_once 'pages/about.php'; ?>
 
 
-        </section>
+			</section>
 
-        <!-- Services Section -->
-        <section id="servicios" class="services-section">
-            <?php include_once('pages/servicios.php'); ?>    
-        </section>
+			<!-- Services Section -->
+			<section id="servicios" class="services-section">
+				<?php include_once('pages/servicios.php'); ?>    
+			</section>
 
-        <!-- Services Section -->
-        <section id="portafolio" class="portafolio-section">
-                <?php include_once('pages/portafolio.php'); ?>            
-        </section>
+			<!-- Services Section -->
+			<section id="portafolio" class="portafolio-section">
+				<?php include_once('pages/portafolio.php'); ?>            
+			</section>
 
-        <!-- Contact Section -->
-        <section id="contacto" class="contact-section">
-            <?php include_once('pages/contacto.php'); ?>
-        </section>
+			<!-- Contact Section -->
+			<section id="contacto" class="contact-section">
+				<?php include_once('pages/contacto.php'); ?>
+			</section>
         </div>
-        <?php include_once 'pages/footer.php'; ?>
+		<?php include_once 'pages/footer.php'; ?>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
@@ -133,208 +132,218 @@
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-        var $table = $('#fresh-table'),
-                
-                full_screen = false;
+		var $table = $('#fresh-table'),
+				full_screen = false;
 
-        $().ready(function () {
-            $table.bootstrapTable({
-                toolbar: ".toolbar",
-                showRefresh: true,
-                search: true,
-                showToggle: true,
-                showColumns: true,
-                pagination: true,
-                striped: true,
-                sortable: true,
-                pageSize: 10,
-                pageList: [5, 10, 25, 50, 100],
-                formatShowingRows: function (pageFrom, pageTo, totalRows) {
-                    //do nothing here, we don't want to show the text "showing x of y from..." 
-                },
-                formatRecordsPerPage: function (pageNumber) {
-                    return pageNumber + " filas visibles";
-                },
-                icons: {
-                    refresh: 'fa fa-refresh',
-                    toggle: 'fa fa-th-list',
-                    columns: 'fa fa-columns',
-                    detailOpen: 'fa fa-plus-circle',
-                    detailClose: 'fa fa-minus-circle'
-                }
-            });
-        });
-
-        
+		$().ready(function () {
+			$table.bootstrapTable({
+				toolbar: ".toolbar",
+				showRefresh: true,
+				search: true,
+				showToggle: true,
+				showColumns: true,
+				pagination: true,
+				striped: true,
+				sortable: true,
+				pageSize: 10,
+				pageList: [5, 10, 25, 50, 100],
+				formatShowingRows: function (pageFrom, pageTo, totalRows) {
+					//do nothing here, we don't want to show the text "showing x of y from..." 
+				},
+				formatRecordsPerPage: function (pageNumber) {
+					return pageNumber + " filas visibles";
+				},
+				icons: {
+					refresh: 'fa fa-refresh',
+					toggle: 'fa fa-th-list',
+					columns: 'fa fa-columns',
+					detailOpen: 'fa fa-plus-circle',
+					detailClose: 'fa fa-minus-circle'
+				}
+			});
+		});
 
 
-        function operateFormatter(value, row, index) {
-            return [
-                '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
-                '<i class="fa fa-heart"></i>',
-                '</a>',
-                '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
-                '<i class="fa fa-edit"></i>',
-                '</a>',
-                '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
-                '<i class="fa fa-remove"></i>',
-                '</a>'
-            ].join('');
-        }
 
-        window.operateEvents = {
-            'click .like': function (e, value, row, index) {
-                alert('You click like icon, row: ' + JSON.stringify(row));
-                console.log(value, row, index);
-            },
-            'click .edit': function (e, value, row, index) {
-                console.log(value, row, index);
-            },
-            'click .remove': function (e, value, row, index) {
-                alert('You click remove icon, row: ' + JSON.stringify(row));
-                console.log(value, row, index);
-            }
-        };
+
+		function operateFormatter(value, row, index) {
+			return [
+				'<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
+				'<i class="fa fa-heart"></i>',
+				'</a>',
+				'<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
+				'<i class="fa fa-edit"></i>',
+				'</a>',
+				'<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
+				'<i class="fa fa-remove"></i>',
+				'</a>'
+			].join('');
+		}
+
+		window.operateEvents = {
+			'click .like': function (e, value, row, index) {
+				alert('You click like icon, row: ' + JSON.stringify(row));
+				console.log(value, row, index);
+			},
+			'click .edit': function (e, value, row, index) {
+				console.log(value, row, index);
+			},
+			'click .remove': function (e, value, row, index) {
+				alert('You click remove icon, row: ' + JSON.stringify(row));
+				console.log(value, row, index);
+			}
+		};
 
     </script>
 
     <script>
-        $(document).ready(function () {
-            /*$(window).resize(function () {
-             var h = $(window).height(),
-             offsetTop = 60; // Calculate the top offset
-             
-             $('#map').css('height', (h - offsetTop));
-             }).resize();
-             */
+		$(document).ready(function () {
+			$('.nav a').on('click', function () {
+				if ($(window).width() < 768) {
+					$('.navbar-toggle').click() //bootstrap 3.x by Richard
+				}
+			});
+
+			/*$(window).resize(function () {
+			 var h = $(window).height(),
+			 offsetTop = 60; // Calculate the top offset
+			 
+			 $('#map').css('height', (h - offsetTop));
+			 }).resize();
+			 */
 
 
-            $('#myCarousel').carousel();
-            //$(".collapse").collapse('hide');
+			$('#myCarousel').carousel();
+			//$(".collapse").collapse('hide');
 
-            $('#contact_form').bootstrapValidator({
-                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-                submitButton: '$contact_form button[type="submit"]',
-                submitHandler: function (validator, form, submitButton) {
-                    enviarMail(form);
-                    $("#resultado").fadeIn();
-                    return false;
-                },
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    first_name: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                            },
-                            notEmpty: {
-                                message: 'Por favor, ingresa tu nombre'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Por favor, ingresa tu E-Mail'
-                            },
-                            emailAddress: {
-                                message: 'El formato valido es: correo@dominio.com'
-                            }
-                        }
-                    },
-                    phone: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Por favor, ingresa tu teléfono'
-                            },
-                            stringLength: {
-                                min: 8,
-                            },
-                        }
-                    },
-                    comment: {
-                        validators: {
-                            stringLength: {
-                                min: 10,
-                                max: 200,
-                                message: 'Por favor, ingresa al menos 10 caracteres y no más de 200'
-                            },
-                            notEmpty: {
-                                message: 'Por favor, ingresa un comentario'
-                            }
-                        }
-                    },
-                    robot: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Por favor, ingresa la respuesta'
-                            }
-                        }
-                    }
-                }
-            })
-                    .on('success.form.bv', function (e) {
-                        e.preventDefault();
-                        $('#contact_form').data('bootstrapValidator').resetForm();
+			$('#contact_form').bootstrapValidator({
+				// To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+				submitButton: '$contact_form button[type="submit"]',
+				submitHandler: function (validator, form, submitButton) {
+					enviarMail(form);
+					$("#resultado").fadeIn();
+					return false;
+				},
+				feedbackIcons: {
+					valid: 'glyphicon glyphicon-ok',
+					invalid: 'glyphicon glyphicon-remove',
+					validating: 'glyphicon glyphicon-refresh'
+				},
+				fields: {
+					first_name: {
+						validators: {
+							stringLength: {
+								min: 2,
+							},
+							notEmpty: {
+								message: 'Por favor, ingresa tu nombre'
+							}
+						}
+					},
+					email: {
+						validators: {
+							notEmpty: {
+								message: 'Por favor, ingresa tu E-Mail'
+							},
+							emailAddress: {
+								message: 'El formato valido es: correo@dominio.com'
+							}
+						}
+					},
+					phone: {
+						validators: {
+							notEmpty: {
+								message: 'Por favor, ingresa tu teléfono'
+							},
+							stringLength: {
+								min: 8,
+							},
+						}
+					},
+					comment: {
+						validators: {
+							stringLength: {
+								min: 10,
+								max: 200,
+								message: 'Por favor, ingresa al menos 10 caracteres y no más de 200'
+							},
+							notEmpty: {
+								message: 'Por favor, ingresa un comentario'
+							}
+						}
+					},
+					robot: {
+						validators: {
+							notEmpty: {
+								message: 'Por favor, ingresa la respuesta'
+							}
+						}
+					}
+				}
+			})
+					.on('success.form.bv', function (e) {
+						e.preventDefault();
+						$('#contact_form').data('bootstrapValidator').resetForm();
 
-                    });
-        });
+					});
+		});
     </script>
 
     <script>
-        function enviarMail(form) {
+		function enviarMail(form) {
 
-            $.ajax({
-                data: $("#contact_form").serialize(),
-                //dataType: "json",
-                url: 'enviar_mail.php',
-                type: 'POST',
-                beforeSend: function () {
-                    $("#resultado").html('<div class="alert alert-info" role="alert">Procesando, espere por favor...</div>');
-                },
-                success: function (response) {
-                    if (response.error == 'no') {
-                        $("#input_name").val('');
-                        $("#input_email").val('');
-                        $("#input_phone").val('');
-                        $("#input_description").val('');
-                    }
-                    var respuesta = JSON.parse(response);
-                    var cadena = '<div class="alert ' + respuesta.alerta + '" role="alert">' + respuesta.mensaje + '</div>';
+			$.ajax({
+				data: $("#contact_form").serialize(),
+				//dataType: "json",
+				url: 'enviar_mail.php',
+				type: 'POST',
+				beforeSend: function () {
+					$("#resultado").html('<div class="alert alert-info" role="alert">Procesando, espere por favor...</div>');
+				},
+				success: function (response) {
+					if (response.error == 'no') {
+						$("#input_name").val('');
+						$("#input_email").val('');
+						$("#input_phone").val('');
+						$("#input_description").val('');
+					}
+					var respuesta = JSON.parse(response);
+					var cadena = '<div class="alert ' + respuesta.alerta + '" role="alert">' + respuesta.mensaje + '</div>';
 
 
-                    $("#resultado").html(cadena);
-                    $('#contact_form').data('bootstrapValidator').resetForm();
-                }
-            });
+					$("#resultado").html(cadena);
+					$('#contact_form').data('bootstrapValidator').resetForm();
+				}
+			});
 
-            setTimeout(function () {
-                $("#resultado").fadeOut('slow');
-            }, 4000);
+			setTimeout(function () {
+				$("#input_name").val('');
+				$("#input_email").val('');
+				$("#input_phone").val('');
+				$("#input_description").val('');
+				$("#input_robot").val('');
+				$("#resultado").fadeOut('slow');
+			}, 5000);
 
-        }
+		}
     </script>
 
     <script>
-        $('.popup').click(function (event) {
-            var width = 575,
-                    height = 400,
-                    left = ($(window).width() - width) / 2,
-                    top = ($(window).height() - height) / 2,
-                    url = this.href,
-                    opts = 'status=1' +
-                    ',width=' + width +
-                    ',height=' + height +
-                    ',top=' + top +
-                    ',left=' + left;
+		$('.popup').click(function (event) {
+			var width = 575,
+					height = 400,
+					left = ($(window).width() - width) / 2,
+					top = ($(window).height() - height) / 2,
+					url = this.href,
+					opts = 'status=1' +
+					',width=' + width +
+					',height=' + height +
+					',top=' + top +
+					',left=' + left;
 
-            window.open(url, 'twitter', opts);
+			window.open(url, 'twitter', opts);
 
-            return false;
-        });
+			return false;
+		});
     </script>
 </html>
